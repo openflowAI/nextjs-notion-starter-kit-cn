@@ -6,6 +6,7 @@ import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
 import { FaMastodon } from '@react-icons/all-files/fa/FaMastodon'
 import { FaTwitter } from '@react-icons/all-files/fa/FaTwitter'
 import { FaYoutube } from '@react-icons/all-files/fa/FaYoutube'
+import { FaDiscord } from '@react-icons/all-files/fa/FaDiscord'
 import { FaZhihu } from '@react-icons/all-files/fa/FaZhihu'
 import { IoMoonSharp } from '@react-icons/all-files/io5/IoMoonSharp'
 import { IoSunnyOutline } from '@react-icons/all-files/io5/IoSunnyOutline'
@@ -110,7 +111,17 @@ export const FooterImpl: React.FC = () => {
 						<FaLinkedin />
 					</a>
 				)}
-
+				{config.discord && (
+					<a
+						className={styles.discord}
+						href={config.discord}
+						title={`LinkedIn ${config.author}`}
+						target='_blank'
+						rel='noopener noreferrer'
+					>
+						<FaDiscord />
+					</a>
+				)}
 				{config.newsletter && (
 					<a
 						className={styles.newsletter}
