@@ -8,6 +8,9 @@ export default siteConfig({
 	// (this should be a Notion ID; see the docs for how to extract this)
 	rootNotionSpaceId: 'd03b77b2-3061-451e-b34b-db5f21753678',
 
+	// Search is not working
+	isSearchEnabled: false,
+
 	// basic site info (required)
 	name: 'Open AI Sora Videos and Articles | FlowSora',
 	domain: 'flowsora.com',
